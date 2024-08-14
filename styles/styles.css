@@ -1,0 +1,262 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; /* Ensure full width */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+  background-image: url('../assets/classroom1.jpg');
+  background-size: cover; /* Cover entire viewport */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Ensure the body covers the full height */
+}
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px; /* Adjust width as needed */
+  }
+  
+  .login-box h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+  }
+  
+  .login-box input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Added border for input fields */
+    border-radius: 4px;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-box button:hover {
+    background-color: #0056b3;
+  }
+
+.sidenav {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 100vh;
+}
+
+.sidenav-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.sidenav-item:hover {
+    background-color: #dee2e6;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.classhead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="time"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.content {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for the classrooms list */
+ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px; /* Space between list items */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border around each item */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+li strong {
+  display: block;
+  font-size: 1.2em; /* Slightly larger font size for the classroom name */
+  margin-bottom: 5px; /* Space below the name */
+}
+
+hr {
+  margin: 10px 0; /* Space above and below the horizontal rule */
+  border: 0;
+  border-top: 1px solid #ddd; /* Light gray line */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ddd; /* Darker text color for the heading */
+}
+
+/* Additional styling to match the principal dashboard */
+/* Base styles */
+body {
+  background-image: url('../assets/classroom1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#content {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparent white background */
+  padding: 20px;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for better depth */
+  width: 90%; /* Slightly wider width */
+  max-width: 900px; /* Limit maximum width */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text inside the content area */
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333; /* Darker text color for the heading */
+  font-weight: 600; /* Slightly bolder font weight */
+}
+
+/* Styles for the students list */
+#studentsList ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+#studentsList li {
+  margin-bottom: 15px; /* Reduced margin between list items */
+  padding: 15px;
+  border: 1px solid #ddd; /* Light border around each item */
+  border-radius: 8px; /* More rounded corners */
+  background-color: #fff; /* White background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for each list item */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+#studentsList li:hover {
+  background-color: #f0f8ff; /* Light blue background on hover */
+  transform: scale(1.02); /* Slightly scale up the item on hover */
+}
+
+#studentsList li strong {
+  display: block;
+  font-size: 1.1em; /* Slightly larger font size for the student name */
+  margin-bottom: 5px; /* Space below the name */
+  color: #007bff; /* Blue color for the labels */
+}
+
+#studentsList hr {
+  margin: 15px 0; /* Space above and below the horizontal rule */
+  border: 0;
+  border-top: 1px solid #ddd; /* Light gray line */
+}
+
+/* Add Student Button */
+#addStudentBtn {
+  background-color: #5bb8dd; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#addStudentBtn:hover {
+  background-color: #5b93dd; 
+  transform: scale(1.05); /* Slightly scale up the button on hover */
+}
